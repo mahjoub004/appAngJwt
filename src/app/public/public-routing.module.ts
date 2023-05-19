@@ -3,17 +3,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CocktailComponent } from './cocktail/cocktail.component';
 import { ContactComponent } from './contact/contact.component';
+import { PubLayoutComponent } from './pub-layout/pub-layout.component';
 
 const routes: Routes = [
-   {path:'' , redirectTo:'home', pathMatch:'full'},
-
-  {path:'home' , component: HomeComponent},
-  {path:'cocktail' , component: CocktailComponent},
-  {path:'contact' , component: ContactComponent}
+  {
+    path: '', component: PubLayoutComponent, children:
+    [
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
+      { path: 'cocktail', component: CocktailComponent },
+      { path: 'contact', component: ContactComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PublicRoutingModule { }
+export class PublicRoutingModule {}

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { CocktailComponent } from './cocktail/cocktail.component';
 import { PublicRoutingModule } from './public-routing.module';
+import { PubLayoutComponent } from './pub-layout/pub-layout.component';
 
 
 
@@ -11,7 +12,8 @@ import { PublicRoutingModule } from './public-routing.module';
   declarations: [
     HomeComponent,
     ContactComponent,
-    CocktailComponent
+    CocktailComponent,
+    PubLayoutComponent
   ],
   imports: [
     CommonModule,
