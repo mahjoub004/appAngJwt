@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { CocktailComponent } from './cocktail/cocktail.component';
+import { PublicRoutingModule } from './public-routing.module';
 
 
 
@@ -13,7 +14,8 @@ import { CocktailComponent } from './cocktail/cocktail.component';
     CocktailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PublicRoutingModule
   ]
 })
 export class PublicModule { }
