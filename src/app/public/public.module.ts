@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CocktailComponent } from './cocktail/cocktail.component';
 import { PublicRoutingModule } from './public-routing.module';
 import { PubLayoutComponent } from './pub-layout/pub-layout.component';
+import { PubHeaderComponent } from './pub-header/pub-header.component';
 
 
 
@@ -13,7 +14,8 @@ import { PubLayoutComponent } from './pub-layout/pub-layout.component';
     HomeComponent,
     ContactComponent,
     CocktailComponent,
-    PubLayoutComponent
+    PubLayoutComponent,
+    PubHeaderComponent
   ],
   imports: [
     CommonModule,
